@@ -18,7 +18,7 @@ setTimeout(function(){
 
 //3.create a basic termianl clock(HH:MM:SS)
 
-function  myclock(){
+function myclock(){
     let mytime = new Date();
 
     let hour = mytime.getHours();
@@ -30,4 +30,4 @@ function  myclock(){
 
 }
 
-myclock();
+setInterval(myclock,1000)
